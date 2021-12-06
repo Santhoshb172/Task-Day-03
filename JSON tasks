@@ -1,0 +1,104 @@
+Question no.1
+For the given JSON iterate over all for loops (for, for in, for of, forEach)
+
+//for in loop
+
+const person = {"firstname" :"Santhoshkumar", "lastname" :"B", "age"  : 24}; 
+let txt = "";
+for (let x in person) 
+{
+  txt += person[x] + " ";
+}
+console.log(txt);
+
+//forEach loop
+
+const person = {"firstname" :"Santhoshkumar", "lastname" :"B", "age"  : 24}; 
+
+Object.keys(person).forEach(function (key)
+{
+    console.log(key + " " +person[key]);
+})
+
+//for loop
+
+var cars = [{ "Brand" : "Skoda" , "Model" : "Rapid" , "year" : 2021}, { "Brand" : "Honda" , "Model" : "City" , "year" : 2020},{ "Brand" : "Toyota" , "Model" : "Innova" , "year" : 2019},{ "Brand" : "Mahindra" , "Model" : "Thar" , "year" : 2021},{ "Brand" : "Maruthi" , "Model" : "800" , "year" : 2000}];
+   for(let i=0;i<cars.length;i++)
+   {
+       console.log(cars[i].Brand+" "+cars[i].Model+" "+cars[i].year);
+   }
+   
+//for of loop
+
+const myObject = {
+  "firstname" : "Santhoshkumar",
+  "lastname" : "B",
+};
+
+for (const [key, value] of Object.entries(myObject)) 
+{
+  console.log(key, value); 
+}
+
+Question no.2
+
+Create your own resume data in JSON format
+
+
+var Resume =  
+{
+"name": "SANTHOSHKUMAR.B",
+   "email": "santhoshkumarb172@gmail.com",
+   "phone_no": "8122526440",
+   "address": "no.6/224/2E_thendral_nagar_seekarajapuram_Ranipet",
+    "objective" : "To be a good professional and dynamic person, making all my efforts towards the development of the organization to which I belong to. To seek challenging assignment and responsibility with an opportunity for growth and career advancement as successful achievements.",
+   "Educational_qualifications" : [{
+ "Graduation": "B.TECH INFORMATION TECHNOLOGY",
+   "yearOfpass": "2018",
+   "university": "ANNA_UNIVERSITY",
+   "college" : "RAJALAKSHMI INSTITUTE OF TECHNOLOGY",
+   "cegp": "6.47"},
+   {"Standard": "HSC",
+       "yearOfpass": "2014",
+       "Board": "State_Board",
+       "school" : "SRI RAMAKRISHNA MATRIC HR SEC SCHOOL",
+       "percentage": "85"},
+       {"Standard": "SSLC",
+       "yearOfpass": "2012",
+       "Board": "State_Board",
+       "school" : "SRI RAMAKRISHNA MATRIC HR SEC SCHOOL",
+       "percentage": "83"}],
+   
+   "Personality_traits " : "A Good Team player,Confident Responsible and Hard working,Problem Solving",
+    "Work_experience" : [{
+"Training" : "National Apprenticeship Training",
+ "ORGANISATION": "Bharat Heavy Electricals Limited Ranipet",
+  "Designation": "Graduate Apprentice",
+   "Department" : "SHIPPING",
+       "Duration" : "1 year"},
+       {"Designation": "contract employee",
+       "ORGANISATION": "Bharat Heavy Electricals Limited Bhel Ranipet",
+       "Department": "SHIPPING",
+       "Duration": "1 year" }],
+       "Technical_skills" : ["Basic Computer Knowledge","MS OFFICE"],
+       "Programming_language" : ["C","C++","HTML","JAVASCRIPT"],
+       "Project" : {
+"TOPIC": "DROPOUT PREDICTION AT SCHOOLS",
+           "TYPE": "GROUP PROJECT",
+           "Team_members" : "3" } ,
+       "Achievements"  : {
+"Award": "RAJIV GANDHI TROPHY",
+            "Played_for" : "TAMILNADU",
+            "Prize": "1st prize" },
+            "Personal_Details" : {
+"Father_name": "BASKARAN.A",
+                "Mother_name": "MANJULA.B",
+                "DOB": "17/02/1997",
+                "Gender": "Male",
+                "Marital_status": "Single",
+                "Nationality": "INDIAN",
+                "Languages_known": "English and Tamil" },
+            "Declaration" : "I hereby declare that the above information is correct in all aspects to the best of my knowledge and belief",
+       
+       "End": "Thank you"};
+       console.log(Resume);
